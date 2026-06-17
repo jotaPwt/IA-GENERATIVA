@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberVest - Simulador Quantitativo</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-orbs">
+        <div class="orb orb-purple"></div>
+        <div class="orb orb-green"></div>
+    </div>
+
+    <main class="glass-container">
+        <header>
+            <h1>// CYBERVEST_SIMULATOR_v1.0</h1>
+            <p class="subtitle">Defina suas metas financeiras na blockchain.</p>
+        </header>
+
+        <section class="form-group">
+            <div class="input-box">
+                <label for="initial-investment">Aporte Inicial ($)</label>
+                <input type="number" id="initial-investment" placeholder="Ex: 1000">
+            </div>
+            
+            <div class="input-box">
+                <label for="monthly-investment">Aporte Mensal ($)</label>
+                <input type="number" id="monthly-investment" placeholder="Ex: 200">
+            </div>
+
+            <div class="input-box">
+                <label for="target-value">Objetivo Final ($)</label>
+                <input type="number" id="target-value" placeholder="Ex: 50000">
+            </div>
+
+            <div class="input-box">
+                <label for="annual-rate">Taxa Anual Estimada (%)</label>
+                <input type="number" id="annual-rate" placeholder="Ex: 15">
+            </div>
+
+            <button id="btn-calculate" onclick="calculateTime()">EXECUTAR SIMULAÇÃO</button>
+        </section>
+
+        <section id="result-display" class="result-container hidden">
+            <h3>[RESULTADO DA ANÁLISE]</h3>
+            <p id="result-text">Aguardando dados...</p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
